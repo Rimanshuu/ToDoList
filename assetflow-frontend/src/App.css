@@ -1,0 +1,118 @@
+/* Layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #fff;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+/* Form & Task List Styling */
+form, .task-list {
+  background-color: #2a2a2a;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+/* Inputs and Buttons */
+input, textarea, select {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #444;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+button {
+  width: auto;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #666;
+}
+
+/* Task Card Layout */
+.task-list {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #444;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.task:hover {
+  background-color: #3a3a3a;
+}
+
+/* Text + Button Layout Inside Task */
+.task-details {
+  flex-grow: 1;
+  padding-right: 1rem;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Optional: Spin Logo (if used) */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
